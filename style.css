@@ -1,0 +1,45 @@
+.pie {
+	width: 50px;
+	aspect-ratio: 1;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 18px;
+	transform: rotate(var(--r));
+}
+.pie:before,
+.pie:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+}
+.pie:before {
+	inset: 0;
+	background: conic-gradient(rgba(0, 20, 255, 0.2) calc(var(--d) * 1deg));
+}
+.digits {
+	width: 50px;
+	aspect-ratio: 1;
+	position: absolute;
+	font-size: 8px;
+	margin: 0;
+	font-weight: bold;
+	padding: 0;
+	z-index: 50;
+}
+.digits li {
+	list-style: none;
+	position: absolute;
+}
+.digits li:nth-child(1) {
+	transform: translate(23px, 9px);
+}
+.digits li:nth-child(2) {
+	transform: translate(45px, 30px);
+}
+.digits li:nth-child(3) {
+	transform: translate(21px, 52px);
+}
+.digits li:nth-child(4) {
+	transform: translate(0px, 30px);
+}
